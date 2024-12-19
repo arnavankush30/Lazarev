@@ -1,0 +1,131 @@
+@font-face {
+  font-family: primer;
+  src: url(./assests/fonts/l);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: primer;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-1 h1 {
+  font-size: 8.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 8.5vw;
+}
+.page-1 h1 svg {
+  background-color: #0da34e;
+  border-radius: 50%;
+  width: 6vw;
+  height: 6vw;
+}
+.page-1 p {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 3vh;
+}
+
+.page-1-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-1-tags h4 {
+  font-weight: 400;
+  font-size: 1vw;
+  text-transform: lowercase;
+  padding: 5px 12px;
+  border: 1px solid #a5a5a5;
+  border-radius: 50px;
+  margin-top: 1vw;
+}
+
+.page-1-tags h4:nth-last-child(2) {
+  border: none;
+  padding: 0.5vw;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2vw 10.4vw;
+  justify-content: space-between;
+}
+nav button {
+  background-color: #0da34e;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.85vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav button svg {
+  height: 0.85vw;
+  margin-left: 1.6vw;
+}
+
+.nav-part-2 {
+  display: flex;
+  gap: 2vw;
+}
+.nav-part-2 h4 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-bottom {
+  height: 0%;
+  width: 80%;
+  position: absolute;
+  bottom: 0%;
+  border-bottom: 1px solid #dadada;
+  transition: all ease 0.65s;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vw 15vw;
+  padding-left: 18.2vw;
+}
+
+.bottom-div {
+  margin-top: 2vw;
+}
+.bottom-div h5 {
+  margin-bottom: 0.4vw;
+  overflow: hidden;
+}
+.bottom-div h5 span {
+  font-weight: 500;
+  font-size: 0.75vw;
+  display: inline-block;
+  opacity: 0;
+}
+
+nav:hover .nav-bottom {
+  height: 150%;
+  bottom: -150%;
+  background-color: #111111;
+}/*# sourceMappingURL=style.css.map */
