@@ -148,3 +148,52 @@ nav {
   z-index: 9;
   border-bottom: 1px solid #fff;
 }
+.moving-div {
+  margin-top: 10vh;
+  position: absolute;
+  bottom: 8%;
+  white-space: nowrap;
+  padding: 1.2vw;
+  overflow: hidden;
+  width: 44%;
+  .move {
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    img {
+      height: 1vw;
+      margin: 0 1.2vw;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.blur-left {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  background: linear-gradient(to right, $primary, transparent);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.blur-right {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  background: linear-gradient(to right, transparent, $primary);
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
