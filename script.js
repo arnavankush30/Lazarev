@@ -88,9 +88,32 @@ function page3VideoAnimation() {
   });
 }
 
-var sections = document.querySelectorAll(".section");
+var sections = document.querySelectorAll(".sec-right");
 
-sections.forEach(function (elem) {});
+sections.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    elem.childNodes[3].style.opacity = 1;
+    elem.childNodes[3].play();
+  });
+  elem.addEventListener("mouseleave", function () {
+    elem.childNodes[3].style.opacity = 0;
+    elem.childNodes[3].load();
+  });
+});
+
+var sections = document.querySelectorAll(".col-inside");
+
+sections.forEach(function (elem) {
+  elem.addEventListener("mouseenter", function () {
+    console.log(elem.childNodes);
+    elem.childNodes[7].style.opacity = 1;
+    elem.childNodes[7].play();
+  });
+  elem.addEventListener("mouseleave", function () {
+    elem.childNodes[7].style.opacity = 0;
+    elem.childNodes[7].load();
+  });
+});
 
 navAnimation();
 page2Animation();
