@@ -88,6 +88,10 @@ function page3VideoAnimation() {
   });
 }
 
+var sections = document.querySelectorAll(".section");
+
+sections.forEach(function (elem) {});
+
 navAnimation();
 page2Animation();
 page3VideoAnimation();
