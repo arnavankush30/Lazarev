@@ -18,11 +18,13 @@ $blue-button: #4f5bff;
   box-sizing: border-box;
   color: $text-dark;
   font-family: primer;
+  -webkit-user-select: none;
 }
 
 body {
   height: 100%;
   width: 100%;
+
   //   overflow: hidden;
 }
 
@@ -540,9 +542,10 @@ nav {
     font-size: 4.5vw;
     margin: 7vw 0;
     color: $text-dark;
+    margin-left: 9.2vw;
   }
   hr {
-    width: 80%;
+    width: 78.5%;
   }
 }
 
@@ -572,9 +575,9 @@ nav {
     }
     h2 {
       float: left;
-      color: rgb(183, 180, 180);
+      color: $text-light;
       height: 5vw;
-      padding-top: 1.9vw;
+      padding-top: 0.9vw;
       position: relative;
       letter-spacing: 0.1vw;
       font-size: 0.9vw;
@@ -587,4 +590,45 @@ nav {
   content: " ";
   display: table;
   grid-area: 1/1/2/2;
+}
+
+.page5-content {
+  width: 100%;
+  margin-top: 5vh;
+  padding: 5vh 0;
+  border-top: 2px solid #fff;
+
+  h1 {
+    font-size: 3vw;
+  }
+  .flex {
+    display: flex;
+    margin: 4vh 0;
+    h4 {
+      border-radius: 50px;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      font-weight: 400;
+      font-size: 0.8vw;
+    }
+  }
+}
+
+.page5-elem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 3vh;
+  padding-bottom: 9vh;
+  p {
+    width: 55%;
+    font-size: 0.8vw !important;
+  }
+  h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  svg {
+    font-size: 1vw;
+  }
 }

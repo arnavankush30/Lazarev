@@ -8,6 +8,7 @@
   box-sizing: border-box;
   color: #ffffff;
   font-family: primer;
+  -webkit-user-select: none;
 }
 
 body {
@@ -514,9 +515,10 @@ nav button svg {
   font-size: 4.5vw;
   margin: 7vw 0;
   color: #ffffff;
+  margin-left: 9.2vw;
 }
 .page-5-top hr {
-  width: 80%;
+  width: 78.5%;
 }
 
 .page-5-bottom {
@@ -547,9 +549,9 @@ nav button svg {
 }
 .page-5-bottom .page5-right h2 {
   float: left;
-  color: rgb(183, 180, 180);
+  color: #f1f1f1;
   height: 5vw;
-  padding-top: 1.9vw;
+  padding-top: 0.9vw;
   position: relative;
   letter-spacing: 0.1vw;
   font-size: 0.9vw;
@@ -561,4 +563,44 @@ nav button svg {
   content: " ";
   display: table;
   grid-area: 1/1/2/2;
+}
+
+.page5-content {
+  width: 100%;
+  margin-top: 5vh;
+  padding: 5vh 0;
+  border-top: 2px solid #fff;
+}
+.page5-content h1 {
+  font-size: 3vw;
+}
+.page5-content .flex {
+  display: flex;
+  margin: 4vh 0;
+}
+.page5-content .flex h4 {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 0.8vw;
+}
+
+.page5-elem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 3vh;
+  padding-bottom: 9vh;
+}
+.page5-elem p {
+  width: 55%;
+  font-size: 0.8vw !important;
+}
+.page5-elem h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+.page5-elem svg {
+  font-size: 1vw;
 }/*# sourceMappingURL=style.css.map */
