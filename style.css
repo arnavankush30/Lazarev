@@ -82,6 +82,10 @@ nav {
 nav h1 {
   font-size: 1.6vw;
 }
+nav h1:hover {
+  color: #0da34e;
+  transition: all ease 1s;
+}
 nav button {
   background-color: #0ba34e;
   display: flex;
@@ -569,10 +573,10 @@ nav button svg {
   width: 100%;
   margin-top: 5vh;
   padding: 5vh 0;
-  border-top: 2px solid #fff;
 }
 .page5-content h1 {
   font-size: 3vw;
+  font-weight: 500;
 }
 .page5-content .flex {
   display: flex;
@@ -602,6 +606,7 @@ nav button svg {
   width: 55%;
   font-size: 0.8vw !important;
   z-index: 8;
+  font-weight: 300 !important;
 }
 .page5-elem h3 {
   font-size: 1.6vw;
@@ -640,4 +645,18 @@ nav button svg {
 .page5-elem:hover .over {
   transform: translateX(0);
   opacity: 1;
+}
+
+summary::marker {
+  content: "";
+}
+
+.uiux {
+  border-top: 1px solid #333;
+  padding: 3vh 0;
+}
+
+.product {
+  border-top: 1px solid #333;
+  padding: 3vh 0;
 }/*# sourceMappingURL=style.css.map */
