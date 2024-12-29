@@ -14,6 +14,7 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -659,4 +660,84 @@ summary::marker {
 .product {
   border-top: 1px solid #333;
   padding: 3vh 0;
+}
+
+.page6 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page6 .text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vw;
+  margin-bottom: 4vw;
+}
+.page6 .text h4 {
+  text-align: center;
+  font-size: 1vw;
+  color: #fafafa;
+  font-weight: 500;
+}
+.page6 .text h2 {
+  text-align: center;
+  width: 62%;
+  font-size: 2.5vw;
+}
+.page6 .card-container {
+  width: 65%;
+  display: flex;
+  gap: 1.6vw;
+  justify-content: center;
+}
+.page6 .card-container .opacity {
+  opacity: 0;
+}
+.page6 .card-container .cards {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1.1vw;
+  padding-right: 1.1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.page6 .card-container .cards .text-top {
+  display: flex;
+  justify-content: space-between;
+}
+.page6 .card-container .cards .text-top h4 {
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+.page6 .card-container .cards .text-bottom p {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #0da34e;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1%;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
+}
+.btn h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn h4 span svg {
+  transform: translateY(-22%);
+  width: 1.5vw;
+  height: 1.5vw;
 }/*# sourceMappingURL=style.css.map */
