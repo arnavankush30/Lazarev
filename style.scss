@@ -642,7 +642,7 @@ nav {
     z-index: 8;
   }
 
-  svg {
+  i {
     font-size: 1vw;
     position: relative;
     z-index: 8;
@@ -666,7 +666,7 @@ nav {
   h3 {
     padding-left: 1vw;
   }
-  svg {
+  i {
     padding-right: 1vw;
     width: 2vw;
   }
@@ -768,13 +768,130 @@ summary::marker {
   h4 {
     text-align: center;
     text-transform: uppercase;
-
+    position: absolute;
     span {
-      svg {
-        transform: translateY(-22%);
-        width: 1.5vw;
-        height: 1.5vw;
+      i {
+        transform: translate(20%, -22%);
+        display: inline-block;
       }
+    }
+  }
+}
+
+.page-7 {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 10vh 10vw;
+
+  h1 {
+    font-size: 5.5vw;
+    color: $primary;
+    padding-left: 23vw;
+    padding-right: 6vw;
+    padding-bottom: 10vh;
+    line-height: 5.8vw;
+    border-bottom: 1px solid #dadada;
+  }
+}
+.page7-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .right-7 {
+    width: 71.5%;
+
+    p {
+      font-size: 1.5vw;
+      color: $primary;
+      margin: 5vh 0;
+      width: 65%;
+    }
+  }
+}
+.blue-btn {
+  background-color: $blue-button;
+  width: 15vw;
+  height: 3.5vw;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.85vw;
+  }
+  i {
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin-left: 0.5vw;
+  }
+}
+
+.page7-bottom {
+  height: 44vh;
+  width: 100%;
+  border-top: 1px solid #dadada;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .btm7-par-1 {
+    border-right: 1px solid #dadada;
+    width: 30%;
+    height: 100%;
+  }
+  .btm7-par-2 {
+    border-right: 1px solid #dadada;
+    width: 28%;
+    height: 100%;
+  }
+  .btm7-par-3 {
+    border-right: 1px solid #dadada;
+    width: 15%;
+    height: 100%;
+  }
+  .btm7-par-4 {
+    border-right: 1px solid #dadada;
+    width: 15%;
+    height: 100%;
+  }
+  .btm7-par-4 {
+    width: 15%;
+    height: 100%;
+  }
+}
+
+.btm-7-parts {
+  padding: 3vh 0;
+  h5 {
+    color: $primary;
+    font-weight: 400;
+    font-size: 0.85vw;
+    margin-bottom: 4vh;
+  }
+  h4 {
+    background-color: $primary;
+    width: 80%;
+    font-size: 0.85vw;
+    font-weight: 500;
+    padding: 0.8vw 1vw;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3vh;
+    span {
+      background-color: #333;
+      padding: 0.5vw;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5vw;
+      height: 1.5vw;
+      margin-right: 1vw;
     }
   }
 }
