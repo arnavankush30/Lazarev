@@ -5,7 +5,7 @@ This project aims to clone the website of Lazarev Agency using HTML, CSS, and Ja
 
 ## Website Preview
 
-You can visit the original website here to get an idea of its design and functionality.
+You can visit the original website [here](https://arnavankush30.github.io/Lazarev/) to get an idea of its design and functionality.
 
 ## Project Overview
 
