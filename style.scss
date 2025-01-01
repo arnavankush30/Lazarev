@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   h1 {
     font-size: 8.5vw;
@@ -864,12 +865,31 @@ summary::marker {
   }
 }
 
+#translate-0 {
+  transform: translateX(0) !important;
+}
+#translate-10 {
+  transform: translateX(10%) !important;
+}
+#translate-20 {
+  transform: translateX(20%) !important;
+}
+#translate-30 {
+  transform: translateX(30%) !important;
+}
+#translate-40 {
+  transform: translateX(40%) !important;
+}
+#translate-50 {
+  transform: translateX(50%) !important;
+}
+
 .btm-7-parts {
-  padding: 3vh 0;
+  padding: 3vh 0.6vw;
   h5 {
     color: $primary;
     font-weight: 400;
-    font-size: 0.85vw;
+    font-size: 0.9vw;
     margin-bottom: 4vh;
   }
   h4 {
@@ -894,4 +914,10 @@ summary::marker {
       margin-right: 1vw;
     }
   }
+}
+
+.page-8 {
+  background-color: $primary;
+  width: 100%;
+  height: 30vh;
 }

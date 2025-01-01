@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .page-1 h1 {
   font-size: 8.5vw;
@@ -826,13 +827,37 @@ summary::marker {
   height: 100%;
 }
 
+#translate-0 {
+  transform: translateX(0) !important;
+}
+
+#translate-10 {
+  transform: translateX(10%) !important;
+}
+
+#translate-20 {
+  transform: translateX(20%) !important;
+}
+
+#translate-30 {
+  transform: translateX(30%) !important;
+}
+
+#translate-40 {
+  transform: translateX(40%) !important;
+}
+
+#translate-50 {
+  transform: translateX(50%) !important;
+}
+
 .btm-7-parts {
-  padding: 3vh 0;
+  padding: 3vh 0.6vw;
 }
 .btm-7-parts h5 {
   color: #111111;
   font-weight: 400;
-  font-size: 0.85vw;
+  font-size: 0.9vw;
   margin-bottom: 4vh;
 }
 .btm-7-parts h4 {
@@ -856,4 +881,10 @@ summary::marker {
   width: 1.5vw;
   height: 1.5vw;
   margin-right: 1vw;
+}
+
+.page-8 {
+  background-color: #111111;
+  width: 100%;
+  height: 30vh;
 }/*# sourceMappingURL=style.css.map */

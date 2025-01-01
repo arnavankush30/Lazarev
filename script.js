@@ -1,3 +1,27 @@
+function loadingAnimation() {
+  var tl = gsap.timeline();
+  tl.from(".page-1", {
+    opacity: 0,
+    duration: 0.2,
+    delay: 0.2,
+  });
+  tl.from(".page-1", {
+    transform: "scaleX(0.7) scaleY(0.2) translateY(80%)",
+    borderRadius: "150px",
+    duration: 2,
+    ease: "expo.out",
+  });
+  tl.from("nav", {
+    opacity: 0,
+    delay: -0.2,
+  });
+  tl.from(".page-1 h1, .page-1 p, .page-1 div", {
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2,
+  });
+}
+
 function navAnimation() {
   var nav = document.querySelector("nav");
 
@@ -86,35 +110,35 @@ function page3VideoAnimation() {
       borderRadius: "30px",
     });
   });
+
+  var sections = document.querySelectorAll(".sec-right");
+
+  sections.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+      elem.childNodes[3].style.opacity = 1;
+      elem.childNodes[3].play();
+    });
+    elem.addEventListener("mouseleave", function () {
+      elem.childNodes[3].style.opacity = 0;
+      elem.childNodes[3].load();
+    });
+  });
+
+  var sections = document.querySelectorAll(".col-inside");
+
+  sections.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+      console.log(elem.childNodes);
+      elem.childNodes[7].style.opacity = 1;
+      elem.childNodes[7].play();
+    });
+    elem.addEventListener("mouseleave", function () {
+      elem.childNodes[7].style.opacity = 0;
+      elem.childNodes[7].load();
+    });
+  });
 }
-
-var sections = document.querySelectorAll(".sec-right");
-
-sections.forEach(function (elem) {
-  elem.addEventListener("mouseenter", function () {
-    elem.childNodes[3].style.opacity = 1;
-    elem.childNodes[3].play();
-  });
-  elem.addEventListener("mouseleave", function () {
-    elem.childNodes[3].style.opacity = 0;
-    elem.childNodes[3].load();
-  });
-});
-
-var sections = document.querySelectorAll(".col-inside");
-
-sections.forEach(function (elem) {
-  elem.addEventListener("mouseenter", function () {
-    console.log(elem.childNodes);
-    elem.childNodes[7].style.opacity = 1;
-    elem.childNodes[7].play();
-  });
-  elem.addEventListener("mouseleave", function () {
-    elem.childNodes[7].style.opacity = 0;
-    elem.childNodes[7].load();
-  });
-});
-
+loadingAnimation();
 navAnimation();
 page2Animation();
 page3VideoAnimation();
